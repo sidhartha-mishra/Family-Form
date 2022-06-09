@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h2>The Basic Form</h2>
+    <form>
+        <fieldset>
+            <legend>Users Input</legend>
+        
+        <!-- First Name, Last Name and Middle Name... -->
+        <label for="fname">First Name:</label><br>
+        <input type="text" name="fname" id="fname" placeholder="Enter your first name..."><br/>
+
+        <label for="mname">Middle Name:</label><br>
+        <input type="text" name="manme" id="mname" placeholder="Enter your middle name..."><br>
+
+        <label for="">Last Name:</label><br>
+        <input type="text" name="lname" id="lname" placeholder="Enter your last name..."><br>
+
+        <!-- Date Of Birth -->
+        <label for="dob">Date-of-Birth</label><br>
+        <input type="date" name="DOB" id="dob" min="1994/01/01"  max="2020/01/01"><br>
+
+        <!-- Email -->
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email" placeholder="Enter your emmail i'd..."><br>
+
+        <!-- Education dropdown... -->
+        <label for="edu">Education</label><br>
+        <select name="edu" id="edu">
+            <option value="btech">B.tech</option>
+            <option value="mtech">M.tech</option>
+            <option value="ms">Ms</option>
+            <option value="itermediate">Intermediate</option>
+        </select><br>
+
+        <!-- Mobile number -->
+        <label for="mobile">Mobile :</label><br>
+        <select name="mobile_Code" id="cCode">
+            <option value="india">+91</option>
+            <option value="pakistan">+92</option>
+            <option value="bangladesh">+93</option>
+            <option value="nepal">+94</option>
+        </select>
+        <input type="tel" name="mobile" id="mobile" placeholder="Enter your mobile number..."><br>
+
+        <!-- Select your gender -->
+        <p><u>Select your Gender :</u></p>
+        <label for="male">Male :</label><br>
+        <input type="radio" name="gender" id="male" value="male"><br>
+
+        <label for="fmale">Female :</label><br>
+        <input type="radio" name="gender" id="fmale" value="fmale"><br>
+
+        <label for="third-gender">Third-gender :</label><br>
+        <input type="radio" name="gender" id="third-gender" value="third-gender"><br>
+
+        <!-- Select your hobbies -->
+        <p><u>Select your hobbies :</u></p>
+        <label for="travelling">Travelling</label>
+        <input type="checkbox" name="travelling" id="travelling">
+
+        <label for="trecking">Trecking</label>
+        <input type="checkbox" name="trecking" id="trecking">
+
+        <label for="cooking">Cooking</label>
+        <input type="checkbox" name="cooking" id="cooking">
+
+        <label for="movies">Movies</label>
+        <input type="checkbox" name="movies" id="movies"><br>
+
+        <!-- password verification... -->
+        <label for="pwd">Password :</label><br>
+        <input type="password" name="pwd" id="pwd" placeholder="Enter your password..."><br>
+
+        <label for="pwd">Re-type Password</label><br>
+        <input type="password" name="pwd" id="pwd" placeholder="Re-enter your password..."><br><br>
+
+        <!-- writte your own word to us... -->
+        <label for="message"><u>Write your words :</u></label><br>
+        <textarea name="message" id="userinput" style="height: 200px; width: 200px;">
+    Writte your own words indetails...
+        </textarea><br>
+
+        <!-- Submit and reset.... -->
+        <input type="submit" value="Submit">
+        <input type="reset" name="" id="">
+    </fieldset>
+    </form>
+</body>
